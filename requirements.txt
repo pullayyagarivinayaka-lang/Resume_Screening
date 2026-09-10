@@ -1,0 +1,35 @@
+# --- Core ---
+python-dotenv==1.0.1
+PyYAML==6.0.2
+
+# --- Data Science ---
+pandas==2.2.2
+numpy==1.26.4
+scikit-learn==1.5.1
+matplotlib==3.9.1
+seaborn==0.13.2
+
+# --- NLP ---
+nltk==3.8.1
+spacy==3.7.5
+sentence-transformers==3.0.1
+
+# --- Resume Parsing ---
+pdfplumber==0.11.4
+PyMuPDF==1.24.9
+python-docx==1.1.2
+
+# --- Database ---
+SQLAlchemy==2.0.32
+mysqlclient==2.2.4        # requires libmysqlclient-dev on Linux; alternative: pymysql
+PyMySQL==1.1.1
+
+# --- Web App ---
+streamlit==1.37.1
+
+# --- Visualization ---
+plotly==5.23.0
+
+# --- Utilities ---
+faker==26.3.0              # for synthetic dataset generation
+tqdm==4.66.5

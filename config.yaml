@@ -1,0 +1,39 @@
+# =========================================================
+# Central configuration for the Resume Screening system
+# Edit values here rather than hardcoding them in src/ files
+# =========================================================
+
+database:
+  # Using PyMySQL driver (pure-Python, no compiled dependency headaches)
+  # Connection string format: mysql+pymysql://user:password@host:port/dbname
+  host: "localhost"
+  port: 3306
+  user: "root"
+  password: "CHANGE_ME"          # override via .env in production, never commit real creds
+  database: "resume_matcher_db"
+
+paths:
+  skill_taxonomy: "data/taxonomy/skills.json"
+  upload_dir: "uploads/"
+  jobs_csv: "data/raw/jobs.csv"
+  candidates_csv: "data/raw/candidates.csv"
+
+nlp:
+  spacy_model: "en_core_web_sm"
+  sentence_transformer_model: "all-MiniLM-L6-v2"
+
+matching:
+  # Final Match Score = weighted sum of the components below (must sum to 1.0)
+  weights:
+    skills_match: 0.50
+    semantic_similarity: 0.25
+    experience_match: 0.10
+    education_match: 0.05
+    certification_project_relevance: 0.10
+
+recommendation:
+  top_k: 10
+
+security:
+  allowed_resume_extensions: [".pdf", ".docx"]
+  max_file_size_mb: 5

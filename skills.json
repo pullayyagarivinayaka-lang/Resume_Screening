@@ -1,0 +1,11 @@
+{
+  "Programming": ["python", "java", "c++", "javascript"],
+  "Data": ["sql", "pandas", "numpy", "excel"],
+  "Data Visualization": ["power bi", "tableau", "matplotlib", "plotly"],
+  "Machine Learning": ["scikit-learn", "xgboost", "tensorflow", "pytorch", "statistics"],
+  "Web": ["html", "css", "javascript", "react", "flask"],
+  "Cloud": ["aws", "azure", "gcp"],
+  "Databases": ["mysql", "postgresql", "mongodb", "sqlite"],
+  "DevOps": ["git", "docker", "kubernetes", "ci/cd"],
+  "Analytics": ["a/b testing", "data analysis", "business analysis", "seaborn"]
+}

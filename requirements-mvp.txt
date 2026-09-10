@@ -1,0 +1,9 @@
+# MVP requirements — kept minimal for fast, reliable deployment.
+# Heavier deps (spaCy, sentence-transformers, SQLAlchemy/MySQL, Faker)
+# get added back in requirements.txt as we layer in later stages.
+
+streamlit==1.37.1
+pandas==2.2.2
+scikit-learn==1.5.1
+pdfplumber==0.11.4
+python-docx==1.1.2
