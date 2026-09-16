@@ -24,6 +24,13 @@ import pandas as pd
 from fastapi import FastAPI, File, UploadFile, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 
+import sys
+from pathlib import Path
+
+BASE_DIR = Path(__file__).resolve().parent.parent
+
+sys.path.insert(0, str(BASE_DIR))
+
 from resume_parser import extract_text, UnsupportedFileTypeError
 from recommender import recommend_jobs
 
