@@ -15,8 +15,8 @@ Sentence-Transformer score and the experience/education components later.
 from __future__ import annotations
 import pandas as pd
 
-from src.skill_extractor import extract_skills, skill_gap
-from src.matcher import compute_tfidf_match_scores
+from src.resume_parser import extract_text, UnsupportedFileTypeError
+from src.recommender import recommend_jobs
 
 SKILLS_WEIGHT = 0.6
 TFIDF_WEIGHT = 0.4
